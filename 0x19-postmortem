@@ -1,1 +1,40 @@
+Incident Report: Website Outage Due to DDoS Attack
 
+Issue Summary
+
+Duration: 2 hours 37 minutes (05/15/2024 10:23 AM EAT to 05/15/2024 01:00 PM EAT)
+Impact: Our main website (example.com) was inaccessible to all users. This resulted in a complete loss of website traffic and potential revenue during the outage period. Approximately 100% of users were affected.
+Root Cause: A Distributed Denial of Service (DDoS) attack overwhelmed our servers, rendering them unable to respond to legitimate user requests.
+Timeline
+
+10:23 AM EAT: A sudden spike in traffic is detected by our monitoring systems, initially assumed to be a flash crowd or promotional activity.
+10:35 AM EAT: As traffic continues to surge, website performance degrades noticeably. Initial investigation focuses on server resources and potential code bottlenecks.
+10:45 AM EAT: Website becomes completely unresponsive. The incident is escalated to the senior DevOps engineer.
+11:00 AM EAT: Further analysis of traffic patterns reveals the attack's signature, confirming it as a DDoS event.
+11:30 AM EAT: Mitigation measures are implemented, including traffic scrubbing and rate limiting.
+12:15 PM EAT: Attack intensity fluctuates but persists, requiring constant adjustment of mitigation strategies.
+01:00 PM EAT: The DDoS attack subsides, and website functionality is gradually restored.
+Root Cause and Resolution
+
+The outage was caused by a large-scale DDoS attack originating from numerous distributed sources. The attackers flooded our network with a massive volume of malicious requests, exceeding our server's capacity to process them. This effectively shut down our website by denying access to legitimate users.
+
+Resolution involved a combination of:
+
+Traffic scrubbing: Filtering out malicious traffic at the network edge.
+Rate limiting: Restricting the number of requests from individual sources.
+Coordination with ISP: Collaborating with our Internet Service Provider to block attacking IP addresses upstream.
+Corrective and Preventative Measures
+
+To prevent similar incidents in the future, we will:
+
+Enhance DDoS protection: Invest in more robust DDoS mitigation services and infrastructure.
+Strengthen monitoring and alerting: Fine-tune monitoring thresholds for early detection of anomalies.
+Develop incident response playbooks: Formalize procedures for handling DDoS attacks and other outages.
+Conduct regular drills: Practice our incident response plans to ensure smooth execution in real-world scenarios.
+Specific Tasks
+
+Upgrade DDoS protection plan with our hosting provider by June 30, 2024.
+Implement automated rate limiting rules based on traffic patterns by July 15, 2024.
+Create a detailed incident response playbook by August 15, 2024.
+Conduct a tabletop exercise simulating a DDoS attack by September 1, 2024.
+Review and update monitoring thresholds for all critical systems by September 15, 2024.
